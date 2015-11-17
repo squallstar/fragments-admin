@@ -9,5 +9,9 @@ Template.fragmentsListRow.helpers({
   }
 });
 
+Template.fragmentsListRow.events({
+  'click [data-delete]': function (event) {
+    event.preventDefault();
+    Fragments.remove(this._id);
   }
 });
