@@ -2,7 +2,8 @@ Meteor.publish('users', function () {
   return Users.find({}, {
     fields: {
       emails: 1,
-      profile: 1
+      profile: 1,
+      'services.google.email': 1
     }
   });
 });
