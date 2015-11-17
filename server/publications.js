@@ -11,3 +11,7 @@ Meteor.publish('users', function () {
 Meteor.publish('fragments', function () {
   return Fragments.find();
 });
+
+Meteor.publish('collections', function () {
+  return Collections.find();
+});

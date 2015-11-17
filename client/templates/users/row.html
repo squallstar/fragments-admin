@@ -1,18 +1,17 @@
 <template name="usersListRow">
   <tr>
-    <td>{{_id}}</td>
-    <td>{{profile.name}}</td>
+    <td><img src={{profile.picture}} class="avatar" /></td>
+    <td><h4><a href="#{{_id}}">{{profile.name}}</a></h4></td>
+    <td>{{fragmentsCount}}</td>
+    <td>{{collectionsCount}}</td>
     <td>{{primaryEmail}}</td>
     <td>
-      <ul>
-        {{#each servicesList}}
-          <li>
-            <strong>{{name}}</strong>
-            <span>{{email}}</span>
-          </li>
-        {{/each}}
-      </ul>
+      {{#each servicesList}}
+        <h5>{{name}}</h5>
+        <h6>{{email}}</h6>
+        <hr />
+      {{/each}}
     </td>
-    <td><a href="#" data-delete>Delete</a></td>
+    <td><a href="#" class="btn btn-danger btn-xs" data-delete>Delete</a></td>
   </tr>
 </template>
