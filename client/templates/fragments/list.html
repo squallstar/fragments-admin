@@ -1,0 +1,19 @@
+<template name="fragmentsList">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Created at</th>
+        <th>Fetched at</th>
+        <th>Title</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each fragments}}
+        {{> fragmentsListRow}}
+      {{/each}}
+    </tbody>
+  </table>
+</template>

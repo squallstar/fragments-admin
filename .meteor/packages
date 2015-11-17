@@ -20,3 +20,4 @@ iron:router             # Application router
 fourseven:scss          # Support for SCSS
 twbs:bootstrap          # Bootstrap
 matb33:collection-hooks # Hooks when inserting/updating/etc data on Mongo
+momentjs:moment         # Datetime library

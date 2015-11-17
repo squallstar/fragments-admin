@@ -1,0 +1,14 @@
+<template name="fragmentsListRow">
+  <tr>
+    <td>{{_id}}</td>
+    <td>{{user.profile.name}}</td>
+    <td>{{timeAgo created_at}}</td>
+    <td>{{timeAgo fetched_at}}</td>
+    <td>
+      <strong>{{title}}</strong>
+      <br />
+      <a href={{url}} target="_blank">{{url}}</a>
+    </td>
+    <td><a href="#" data-delete>Delete</a></td>
+  </tr>
+</template>
