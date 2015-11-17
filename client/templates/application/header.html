@@ -11,12 +11,11 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="{{#if equals currentRoute 'users.list'}}active{{/if}}">
-            <a href={{pathFor 'users.list'}}>Users</a>
-          </li>
-          <li class="{{#if equals currentRoute 'fragments.list'}}active{{/if}}">
-            <a href={{pathFor 'fragments.list'}}>Fragments</a>
-          </li>
+          {{#each navRoutes}}
+            <li class="{{#if equals currentRoute route}}active{{/if}}">
+              <a href={{pathFor route}}>{{name}}</a>
+            </li>
+          {{/each}}
         </ul>
       </div><!--/.nav-collapse -->
     </div>
