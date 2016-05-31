@@ -10,7 +10,7 @@ Template.usersListRow.helpers({
     return services;
   },
   fragmentsCount: function () {
-    return Fragments.find({ user: this._id }).count();
+    return Fragments.find({ 'user._id': this._id }).count();
   },
   collectionsCount: function () {
     return Collections.find({ user: this._id }).count();
